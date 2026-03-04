@@ -566,9 +566,11 @@ a { text-decoration: none; color: inherit; }
 .faq-section {
   padding-top: 80px;
   padding-bottom: 80px;
-  padding-left: 120px;
-  padding-right: 120px;
   background: var(--white);
+}
+.faq-section .container {
+  padding-left: 60px;
+  padding-right: 60px;
 }
 .faq-list {
   max-width: 960px;
@@ -924,7 +926,26 @@ a { text-decoration: none; color: inherit; }
   .products-section,
   .faq-section {
     padding-top: 48px;
-    padding-bottom: 60px;
+    padding-bottom: 48px;
+  }
+  .faq-section .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .faq-question {
+    padding: 18px 0;
+    font-size: 0.9rem;
+    gap: 12px;
+  }
+  .faq-icon {
+    font-size: 1.2rem;
+  }
+  .faq-answer p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .faq-list {
+    max-width: 100%;
   }
   .banner-cta {
     padding-top: 50px;
