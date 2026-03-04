@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drive Dynamix</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─── -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="assets/Logo.png" alt="Drive Dynamix" class="logo-img" />
+        <!-- Fallback text logo if image not yet added -->
+        <span class="logo-text-fallback">
+          <span class="logo-drive">DRIVE</span>
+          <span class="logo-dynamix">DYNAMIX</span>
+        </span>
+      </a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://wa.me/917829979904" class="btn-whatsapp" target="_blank">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.558 4.118 1.535 5.846L.057 23.429a.5.5 0 0 0 .514.571l5.701-1.496A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.88 9.88 0 0 1-5.031-1.374l-.36-.214-3.733.979.996-3.648-.235-.374A9.865 9.865 0 0 1 2.1 12C2.1 6.534 6.534 2.1 12 2.1S21.9 6.534 21.9 12 17.466 21.9 12 21.9z"/></svg>
+        </a>
+        <a href="#contact" class="btn-cta">Enquire Now</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- ─── SECTION 1: HERO ─── -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <h1 class="hero-heading">Upgrade Your Ride with Next-Gen Car Tech.</h1>
+      <a href="#products" class="btn-red">Explore Products</a>
+      <div class="hero-img-wrap">
+        <img src="assets/Section 1/Image 1.jpg" alt="Drive Dynamix Products" class="hero-main-img" />
+        <!-- placeholder shown until asset is added -->
+        <div class="hero-img-placeholder">
+          <span>Hero product image</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <h2 class="form-title">Enquire Now</h2>
+      <div class="lead-form">
+        <input type="text" placeholder="Name*" class="form-input" />
+        <input type="tel" placeholder="Phone No*" class="form-input" />
+        <input type="email" placeholder="Mail*" class="form-input" />
+        <select class="form-select">
+          <option value="" disabled selected>Select Product*</option>
+          <option>DUDU PRO 10.3-Inch Car Multimedia Unit</option>
+          <option>DUDU Lite 12.3-Inch Car Multimedia Unit</option>
+          <option>DUDU 370-360° Panoramic Camera</option>
+          <option>DUDU USB Android TPMS with 4 sensors</option>
+          <option>Thunder Bolt AX1 Auxilary Projectors</option>
+          <option>DUDUAUTO Bluetooth Steering Wheel Control Adapter</option>
+          <option>DUDUAUTO-307-F (Front Camera)</option>
+          <option>DUDUAUTO Rear Camera</option>
+        </select>
+        <button class="btn-submit">Submit Your Details</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 2: PRODUCT CATEGORIES ─── -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <h2 class="section-title">Our Product Categories</h2>
+      <div class="categories-grid">
+      <div class="cat-card">
+        <div class="cat-icon">
+          <img src="assets/Section 2/Camera.png" alt="Camera" />
+        </div>
+        <span class="cat-label">Camera</span>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">
+          <img src="assets/Section 2/Multimedia Unit.png" alt="Multimedia Unit" />
+        </div>
+        <span class="cat-label">Multimedia Unit</span>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">
+          <img src="assets/Section 2/Android TPMS.png" alt="Android TPMS" />
+        </div>
+        <span class="cat-label">Android TPMS</span>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">
+          <img src="assets/Section 2/Bluetooth Steering.png" alt="Bluetooth Steering" />
+        </div>
+        <span class="cat-label">Bluetooth Steering</span>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">
+          <img src="assets/Section 2/Auxilary Projectors.png" alt="Auxilary Projectors" />
+        </div>
+        <span class="cat-label">Auxilary Projectors</span>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 2.5: MULTIMEDIA FEATURE ─── -->
+  <section class="feature-block feature-img-left">
+    <div class="container">
+      <div class="feature-media">
+        <img src="assets/Section 3/Image.png" alt="Smart Android Multimedia Unit Interface" class="feature-img" />
+        <div class="feature-img-placeholder"><span>Multimedia Unit Interface</span></div>
+      </div>
+      <div class="feature-content">
+        <h2 class="section-title left">DUDU PRO 10.3-Inch Android Car Multimedia Unit</h2>
+        <p>Step up your dashboard with the DUDU PRO — a 10.3-inch Android car multimedia unit powered by an octa-core processor and a crisp QLED touchscreen. Wireless Apple CarPlay, Android Auto, and dual-band GPS give you seamless navigation and connectivity without a single cable.</p>
+        <p>With 360° camera support, built-in DSP audio tuning, and an adaptive interface that responds instantly, the DUDU PRO is the most complete car infotainment upgrade available in India. Engineered for performance, designed for every drive.</p>
+        <a href="#contact" class="btn-red">Enquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 4: PRODUCTS GRID (Featured 5) ─── -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <h2 class="section-title">Our Products</h2>
+      <div class="products-grid">
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/Section 4/Product 1.png" alt="DUDU PRO 10.3" />
+          <div class="product-img-ph"><span>DUDU PRO 10.3</span></div>
+        </div>
+        <p class="product-name">DUDU PRO 10.3-Inch Car Multimedia Unit</p>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/Section 4/Product 2.png" alt="DUDU Lite 12.3" />
+          <div class="product-img-ph"><span>DUDU Lite 12.3</span></div>
+        </div>
+        <p class="product-name">DUDU Lite 12.3-Inch Car Multimedia Unit</p>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/Section 4/Product 3.png" alt="DUDU 370 Camera" />
+          <div class="product-img-ph"><span>360° Camera</span></div>
+        </div>
+        <p class="product-name">DUDU 370- 360° Panaromic Camera</p>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/Section 4/Product 4.png" alt="DUDU TPMS" />
+          <div class="product-img-ph"><span>TPMS Sensors</span></div>
+        </div>
+        <p class="product-name">DUDU USB Android TPMS with 4 sensors</p>
+      </div>
+      <div class="product-card active">
+        <div class="product-img-wrap">
+          <img src="assets/Section 4/Product 5.png" alt="Thunder Bolt AX1" />
+          <div class="product-img-ph"><span>Thunder Bolt AX1</span></div>
+        </div>
+        <p class="product-name">Thunder Bolt AX1 Auxilary Projectors</p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 5: BANNER CTA ─── -->
+  <section class="banner-cta">
+    <div class="container">
+      <div class="banner-media">
+        <img src="assets/Section 5/Image.jpg" alt="Multimedia Banner" class="banner-img" />
+        <div class="banner-img-ph"><span>Banner product image</span></div>
+        <div class="banner-content">
+          <h2>Smarter. Every Drive.</h2>
+          <p>Upgrade your dashboard with the DUDU Lite 12.3-inch multimedia unit for wireless CarPlay and smart GPS navigation.</p>
+          <a href="#products" class="btn-red">View All Products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 6: FEATURED — PROJECTORS ─── -->
+  <section class="feature-block feature-img-right">
+    <div class="container">
+      <div class="feature-content">
+        <h2 class="section-title left">Thunder Bolt AX1 Auxiliary Projectors</h2>
+        <p>The Thunder Bolt AX1 delivers professional-grade visibility for motorcycle touring with a 50W low beam and 80W high beam. Choose from 3000K, 4300K, or 5800K colour temperatures to cut through fog, rain, or any low-light condition on India's toughest roads.</p>
+        <p>IP67 waterproof-rated and remote-controlled, the AX1 includes a flasher module for added safety on every ride. Built with maximum endurance in mind, it carries a 2-year warranty and is trusted by serious touring riders across India.</p>
+        <a href="#contact" class="btn-red">Enquire Now</a>
+      </div>
+      <div class="feature-media">
+        <img src="assets/Section 6/Image.png" alt="Thunder Bolt AX1 Projectors" class="feature-img" />
+        <div class="feature-img-placeholder"><span>Projectors image</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 7: MORE PRODUCTS GRID ─── -->
+  <section class="products-section products-section--alt">
+    <div class="container">
+      <h2 class="section-title">Complete product range</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="assets/Section 7/Product 1.png" alt="Bluetooth Steering" />
+            <div class="product-img-ph"><span>Bluetooth Steering</span></div>
+          </div>
+          <p class="product-name">DUDUAUTO Bluetooth Steering Wheel Control Adapter</p>
+        </div>
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="assets/Section 7/Product 2.png" alt="Front Camera" />
+            <div class="product-img-ph"><span>Front Camera</span></div>
+          </div>
+          <p class="product-name">DUDUAUTO-307-F (Front Camera)</p>
+        </div>
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="assets/Section 7/Product 3.png" alt="Rear Camera" />
+            <div class="product-img-ph"><span>Rear Camera</span></div>
+          </div>
+          <p class="product-name">DUDUAUTO Rear Camera</p>
+        </div>
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="assets/Section 7/Product 4.png" alt="DUDU Lite 12.3" />
+            <div class="product-img-ph"><span>DUDU Lite 12.3</span></div>
+          </div>
+          <p class="product-name">DUDU Lite 12.3-Inch Car Multimedia Unit</p>
+        </div>
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="assets/Section 7/Product 5.png" alt="Thunder Bolt AX1" />
+            <div class="product-img-ph"><span>Thunder Bolt AX1</span></div>
+          </div>
+          <p class="product-name">Thunder Bolt AX1 Auxilary Projectors</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 8: FAQ ─── -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <h2 class="section-title center">Frequently Asked Questions</h2>
+      <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What is an Android car multimedia unit?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>An Android car multimedia unit replaces your factory head unit and runs the Android operating system directly on your dashboard. It gives you full access to navigation apps like Google Maps, music streaming, wireless smartphone mirroring via Apple CarPlay or Android Auto, and a high-resolution touchscreen — making your drive smarter and more connected.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do the DUDU multimedia units support wireless Apple CarPlay and Android Auto?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Both the DUDU PRO and DUDU Lite support wireless Apple CarPlay and Android Auto out of the box. You can mirror your phone's interface, use Google or Apple Maps, take hands-free calls, and stream music — with zero cables required.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Is the Thunder Bolt AX1 compatible with my motorcycle?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>The Thunder Bolt AX1 is a universal auxiliary projector compatible with most motorcycles. It ships with a complete mounting kit, wiring harness, and flasher module. We recommend professional installation for the cleanest electrical fit and best safety outcome.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What is TPMS and why do I need it?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>TPMS (Tyre Pressure Monitoring System) tracks your tyre pressure in real time and sends instant alerts when pressure drops below a safe level. It helps prevent blowouts, reduces tyre wear, and improves fuel efficiency — making it an essential safety upgrade for every car owner in India.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What warranty do your products come with?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>All Thunder Bolt Auxiliary Projectors come with a 2-year manufacturer warranty. DUDU car multimedia units include warranty coverage as specified at the time of purchase. Our team in Bangalore provides full post-sale support for installation, setup, and technical queries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 9: CONTACT ─── -->
+  <section class="contact-section" id="contact">
+    <div class="contact-map">
+      <iframe
+        src="https://www.google.com/maps?q=203,+Paramahansa+Yogananda+Rd,+Stage+2,+Hoysala+Nagar,+Indiranagar,+Bengaluru,+Karnataka+560038&output=embed"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="Drive Dynamix Location">
+      </iframe>
+    </div>
+    <div class="contact-form-wrap">
+      <h2 class="form-title">Contact Us</h2>
+      <div class="lead-form">
+        <input type="text" placeholder="Name*" class="form-input" />
+        <input type="tel" placeholder="Phone No*" class="form-input" />
+        <input type="email" placeholder="Mail*" class="form-input" />
+        <select class="form-select">
+          <option value="" disabled selected>Select Product*</option>
+          <option>DUDU PRO 10.3-Inch Car Multimedia Unit</option>
+          <option>DUDU Lite 12.3-Inch Car Multimedia Unit</option>
+          <option>DUDU 370-360° Panoramic Camera</option>
+          <option>DUDU USB Android TPMS with 4 sensors</option>
+          <option>Thunder Bolt AX1 Auxilary Projectors</option>
+          <option>DUDUAUTO Bluetooth Steering Wheel Control Adapter</option>
+          <option>DUDUAUTO-307-F (Front Camera)</option>
+          <option>DUDUAUTO Rear Camera</option>
+        </select>
+        <button class="btn-submit">Submit Your Details</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 10: FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/Logo.png" alt="Drive Dynamix" class="footer-logo-img" />
+        <div class="footer-logo-text-fallback">
+          <span class="logo-drive">DRIVE</span>
+          <span class="logo-dynamix">DYNAMIX</span>
+        </div>
+        <p class="footer-tagline">Your car upgrade specialists.<br />Quality products, expert installation.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Contact Us</h4>
+        <p>+91 78299 79904</p>
+        <p>203, Paramahansa Yogananda Rd, Stage 2,<br />Hoysala Nagar, Indiranagar,<br />Bengaluru, Karnataka 560038</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Social Media</h4>
+        <a href="https://www.instagram.com/drive.dynamix.in?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61578684964931" target="_blank">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Drive Dynamix All rights reserved &nbsp;|&nbsp; Marketed By <a href="https://www.profitcast.com" class="profitcast-link" target="_blank">Profitcast</a> — Efficient growth, delivered.</p>
+      <div class="footer-legal">
+        <a href="#">Terms &amp; Condition</a>
+        <span>|</span>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── FLOATING WHATSAPP BUTTONS ─── -->
+  <a href="https://wa.me/917829979904" class="float-wa float-wa--left" target="_blank" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.558 4.118 1.535 5.846L.057 23.429a.5.5 0 0 0 .514.571l5.701-1.496A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.88 9.88 0 0 1-5.031-1.374l-.36-.214-3.733.979.996-3.648-.235-.374A9.865 9.865 0 0 1 2.1 12C2.1 6.534 6.534 2.1 12 2.1S21.9 6.534 21.9 12 17.466 21.9 12 21.9z"/></svg>
+  </a>
+  <a href="tel:+917829979904" class="float-wa float-wa--right" aria-label="Phone">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
